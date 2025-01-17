@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Desenvolvedor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: 'Arial', sans-serif; /* Fonte simples e legível */
+            line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Cor de fundo suave */
+            color: #333; /* Cor do texto principal */
+        }
+
+        /* Estilo do cabeçalho */
+        .header {
+            background-color: #333; /* Cor de fundo escura */
+            color: #fff; /* Texto branco */
+            padding: 2rem 0; /* Espaçamento interno */
+            text-align: center; /* Centraliza o conteúdo */
+        }
+
+        .header h1 {
+            margin: 0; /* Remove margens padrão */
+            font-size: 2.5rem; /* Tamanho grande para o título */
+        }
+
+        /* Estilo da navegação */
+        .header nav ul {
+            list-style: none; /* Remove marcadores de lista */
+            padding: 0;
+            margin: 1rem 0 0; /* Espaçamento acima da lista */
+            display: flex; /* Layout flexível para os itens */
+            justify-content: center; /* Centraliza os itens */
+        }
+
+        .header nav ul li {
+            margin: 0 1.5rem; /* Espaçamento entre os itens */
+        }
+
+        .header nav ul li a {
+            color: #fff; /* Texto branco */
+            text-decoration: none; /* Remove sublinhado */
+            font-weight: bold; /* Texto em negrito */
+            font-size: 1.1rem; /* Tamanho da fonte */
+            transition: color 0.3s ease; /* Transição suave de cor */
+        }
+
+        .header nav ul li a:hover {
+            color: #ff6347; /* Cor ao passar o mouse (tom de laranja) */
+        }
+
+        /* Estilo da seção de perfil */
+        .perfil {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: #fff; /* Fundo branco */
+            margin: 2rem auto; /* Centraliza a seção */
+            max-width: 800px; /* Largura máxima */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        .perfil img {
+            border-radius: 50%; /* Imagem redonda */
+            width: 150px;
+            height: 150px;
+            object-fit: cover; /* Garante que a imagem cubra o espaço */
+            border: 3px solid #333; /* Borda escura */
+        }
+
+        .perfil h2 {
+            margin: 1rem 0;
+            font-size: 2rem; /* Tamanho grande para o nome */
+            color: #333; /* Cor escura */
+        }
+
+        .perfil p {
+            font-size: 1.1rem; /* Tamanho da fonte */
+            color: #555; /* Cor mais suave */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo da seção de habilidades */
+        .perfil aside {
+            background-color: #f4f4f4; /* Fundo cinza claro */
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px; /* Bordas arredondadas */
+            width: 100%; /* Largura total */
+        }
+
+        .perfil aside h3 {
+            margin-top: 0; /* Remove margem superior */
+            font-size: 1.5rem; /* Tamanho da fonte */
+            color: #333; /* Cor escura */
+        }
+
+        .perfil aside ul {
+            list-style: none; /* Remove marcadores de lista */
+            padding: 0;
+        }
+
+        .perfil aside ul li {
+            background-color: #fff; /* Fundo branco */
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px; /* Bordas arredondadas */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo da seção de experiências */
+        .perfil details {
+            margin: 1rem 0;
+            width: 100%; /* Largura total */
+        }
+
+        .perfil details summary {
+            font-weight: bold; /* Texto em negrito */
+            font-size: 1.2rem; /* Tamanho da fonte */
+            cursor: pointer; /* Cursor de ponteiro */
+            color: #333; /* Cor escura */
+        }
+
+        .perfil details ul {
+            list-style: none; /* Remove marcadores de lista */
+            padding: 0;
+        }
+
+        .perfil details ul li {
+            background-color: #f4f4f4; /* Fundo cinza claro */
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+
+        /* Estilo do rodapé */
+        .footer {
+            background-color: #333; /* Cor de fundo escura */
+            color: #fff; /* Texto branco */
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer p {
+            margin: 0; /* Remove margens padrão */
+        }
+
+        /* Botão "Voltar ao Topo" */
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin: 1rem 0;
+            color: #333; /* Cor escura */
+            text-decoration: none; /* Remove sublinhado */
+            font-weight: bold; /* Texto em negrito */
+        }
+
+        .back-to-top:hover {
+            color: #ff6347; /* Cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de perfil -->
+        <section class="perfil">
+            <figure>
+                <img src="img/perfil.jpg" alt="Foto do Desenvolvedor">
+                <figcaption>João Silva</figcaption>
+            </figure>
+            <h2>Olá, eu sou João Silva</h2>
+            <p>Desenvolvedor Front-end com experiência em HTML, CSS, JavaScript e React.</p>
+            <!-- Seção de habilidades -->
+            <aside>
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Git</li>
+                </ul>
+            </aside>
+            <!-- Seção de experiências (expandível) -->
+            <details>
+                <summary>Minhas Experiências</summary>
+                <ul>
+                    <li>Projeto 1: Descrição breve</li>
+                    <li>Projeto 2: Descrição breve</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 João Silva. Todos os direitos reservados.</p>
+        <a href="#" class="back-to-top">Voltar ao Topo</a>
+    </footer>
+</body>
+</html>

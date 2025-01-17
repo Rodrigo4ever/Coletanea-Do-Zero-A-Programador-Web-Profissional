@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.perfil{
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil img{
+    padding: 20px;
+    width: 250px;
+    border-radius: 50%;
+
+}
+.projetos {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.projetos .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    /* max-width: 300px; */
+    background-color: #fff;
+    width: 23%; /* Ajuste a largura conforme necessário */
+    margin: 10px; /* Adiciona margem para espaçamento */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+      
+}
+
+.projetos .card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+details summary {
+    cursor: pointer;
+}
