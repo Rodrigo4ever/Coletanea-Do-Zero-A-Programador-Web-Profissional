@@ -1,0 +1,68 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(to right, #007BFF, #00C6FF);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Principal */
+.main {
+    padding: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer nav a {
+    color: #00C6FF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer nav a:hover {
+    text-decoration: underline;
+}
